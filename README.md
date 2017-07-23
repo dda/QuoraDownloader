@@ -21,11 +21,17 @@ There are two reasons for this.
 There are two passes.
 
 Pass 1:
- • Get the first page -- pagination trick ?page_id=x (Thanks Nick!) and identify the total number of pages.
- • Then extract the question/answer links for pass 2. They are spread over 5 workers.
+
+• Get the first page -- pagination trick ?page_id=x (Thanks Nick!) and identify the total number of pages.
+
+• Then extract the question/answer links for pass 2. They are spread over 5 workers.
 
 Pass2:
- • Create a folder fwor the answers, and a subfolder for the images
- • Once we have all the links, start the workers. They go through the list of links they've been given.
- • When a link is received, the page is saved. The date the question was answered/the answer updated is extracted.
- • The image links are extracted and the images saved in the subfolder. JPEG and PNG images are recognized and properly named.
+
+• Create a folder fwor the answers, and a subfolder for the images
+
+• Once we have all the links, start the workers. They go through the list of links they've been given.
+
+• When a link is received, the page is saved. The date the question was answered/the answer updated is extracted.
+
+• The image links are extracted and the images saved in the subfolder. JPEG and PNG images are recognized and properly named.
